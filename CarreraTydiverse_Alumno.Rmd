@@ -175,8 +175,9 @@ cran2
 ```
 11. Ordena `cran2` en orden ascendente según la variable `ip_id`.
 ```{r}
-
-arrange(cran2)
+cran_asc<- cran2 %>% 
+  arrange(ip_id)
+cran_asc
 ```
 12. Ordena `cran2` en orden descendente según la variable `ip_id`.
 ```{r}
