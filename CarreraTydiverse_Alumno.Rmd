@@ -181,7 +181,9 @@ cran_asc
 ```
 12. Ordena `cran2` en orden descendente según la variable `ip_id`.
 ```{r}
-
+cran_desc<- cran2 %>% 
+  arrange(desc(ip_id))
+cran_desc
 ```
 12. Ordena `cran2` según los valores de `package e ip_id`.
 ```{r}
