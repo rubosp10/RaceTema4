@@ -274,7 +274,11 @@ top_descargas
 ```{r}
 
 
-
+top_counts_sorted <- cran %>%
+  count(package)%>%
+  filter(n > quantile(n, probs=0.99)) %>%
+  arrange(desc(n))
+top_counts_sorted
 
 
 
