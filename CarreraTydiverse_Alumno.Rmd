@@ -187,7 +187,9 @@ cran_desc
 ```
 12. Ordena `cran2` según los valores de `package e ip_id`.
 ```{r}
-
+cran_ord <- cran2 %>%
+  arrange(ip_id, package)
+cran_ord
 ```
 13. Ordena `cran2` según los valores de `country` (ascendente), `r_version` (desdencente) e `ip_id`(ascendente).
 ```{r}
