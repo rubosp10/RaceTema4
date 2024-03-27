@@ -142,9 +142,9 @@ cran2.2
 ```
 6. Elige aquellas descargas realizadas desde España (ES), con versiones de R superiores a la 3.4.0
 ```{r}
-cran3 <- cran %>%
+cran3.3 <- cran %>%
   filter(country=="ES", r_version > "3.4.0")
-cran3
+cran3.3
 ```
 
 7. Elige aquellas descargas realizadas desde España (ES), o Portugal (PT).
@@ -200,8 +200,8 @@ cran_ord1
 14. Selecciona el subconjunto formado por las variables, del `cran`, `ip_id, package y size` 
 en este orden y almacénalas en `cran3`.
 ```{r}
-
-
+cran3<- select(cran, ip_id, package, size)
+cran3
 ```
 
 15. Crea una nueva variable en `cran3` llamada `size_mb` que contenga el tamaño de la descarga expresado en Mbytes ($1Mbyte=2^{20}$ bytes).
