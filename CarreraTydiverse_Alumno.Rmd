@@ -160,7 +160,9 @@ cran3
 7. Elige aquellas descargas realizadas desde España (ES), o Portugal (PT).
 ```{r}
 
-
+cran4 <- cran %>%
+  filter(country=="ES"| country=="PT")
+cran4
 
 ```
 
