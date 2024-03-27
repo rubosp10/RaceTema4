@@ -164,7 +164,9 @@ cran5
 ```
 9. Elige aquellas descargas en las que la versión del sistema operativo no está vacía.
 ```{r}
-
+cran6 <- cran %>%
+  filter(r_os!="NA")
+cran6
 ```
 10. Almacena en `cran2` todas las columnas entre `size` y `ip_id`. 
 ```{r}
