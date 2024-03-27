@@ -7,15 +7,15 @@ params:
   lang: ES
 lang: "`r switch(params$lang, ES = 'es-ES', EN = 'en-US')`"
 output:
-  pdf_document:
-    toc: no
-    toc_depth: 3
-    number_sections: yes
   html_document:
     echo: yes
     number_sections: yes
     theme: lumen
     toc: yes
+  pdf_document:
+    toc: no
+    toc_depth: 3
+    number_sections: yes
   html_notebook:
     echo: yes
     number_sections: yes
@@ -290,8 +290,6 @@ top_counts_sorted
 24. En lugar de utilizar el recuento de descargas, es más lógico considerar el número de ordenadores distintos en los que se han descargado las librerías, para ello utilizaríamos la columna `unique` que cuenta solo una descarga por ordenador, independientemente del número de veces que se descarge una librería. Repite los cálculos considerando esta variable y almacena el resultado en `top_unique_sorted`.
 
 ```{r}
-
-
 
 
 
